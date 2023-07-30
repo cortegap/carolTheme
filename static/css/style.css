@@ -26,7 +26,7 @@ body{
     max-width: 800px;
     margin: 40px auto;
     padding: 0 10px;
-    font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+    font: 18px/1.5 system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: #444;
     background: #ffffff;
 }
@@ -46,11 +46,20 @@ p.footer{
 
 .figure-img{
     display:inline-block;
-    margin-bottom:.5rem;
+    margin: -1px 0 6px 0px;
     line-height:1;
     float: right;
     padding-left:20px;
     padding-right:20px;
+    width: 30%;
+    height: 50%;
+}
+
+img {
+    height: 50%;
+    width: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
 .center{
