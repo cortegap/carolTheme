@@ -1,0 +1,19 @@
+<div class="menu">
+    {{ if eq .Site.Language "en-US" }}
+    <a href="/" class="carolina-name">Carolina Ortega Pérez</a>
+    {{ else }}
+    <a href="/es/" class="carolina-name">Carolina Ortega Pérez</a>
+    {{ end }}
+    <nav id="nav" class="nav-links" style="padding: top 20px;">
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}">
+        {{ if not (eq .Name "Carolina Ortega Pérez") }} 
+        {{ $text := print .Name | safeHTML }}
+        {{ $text }}
+        {{ end }}
+        </a>
+        {{ end }}
+    </nav>
+    <div class="langs"><a class="nav-links-lang" href="/">EN</a> <a class="nav-links-lang"href="/es/">ES</a></div>
+</div>
+<hr>
