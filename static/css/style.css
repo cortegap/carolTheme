@@ -45,7 +45,6 @@ p.footer{
 }
 
 .figure-img{
-    display:inline-block;
     margin: -1px 0 6px 0px;
     line-height:1;
     float: right;
