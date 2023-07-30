@@ -1,9 +1,6 @@
 <div class="menu">
-    {{ if eq .Site.Language "en-US" }}
-    <a href="/" class="carolina-name">Carolina Ortega Pérez</a>
-    {{ else }}
-    <a href="/es/" class="carolina-name">Carolina Ortega Pérez</a>
-    {{ end }}
+    {{ $lang := print .Site.Language  | safeHTML }}
+    <a href="/{{ $lang }}/" class="carolina-name">Carolina Ortega Pérez</a>
     <nav id="nav" class="nav-links" style="padding: top 20px;">
         {{ range .Site.Menus.main }}
         <a href="{{ .URL }}">
@@ -14,6 +11,6 @@
         </a>
         {{ end }}
     </nav>
-    <div class="langs"><a class="nav-links-lang" href="/">EN</a> <a class="nav-links-lang"href="/es/">ES</a></div>
+    <div class="langs"><a class="nav-links-lang" href="/en/">EN</a> <a class="nav-links-lang"href="/es/">ES</a></div>
 </div>
 <hr>
