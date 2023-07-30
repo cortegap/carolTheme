@@ -1,0 +1,93 @@
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited{
+    color:rgb(21, 140, 118);
+}
+
+a:hover{
+    color:rgb(21, 140, 118);
+    text-decoration: underline;
+}
+
+h1,h2,h3{
+    line-height: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 10px;
+    font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+    color: #444;
+    background: #ffffff;
+}
+
+a.footer-link, a.footer-link:visited{
+    color:#585858;
+    text-decoration: none;
+}
+a.footer-link:hover{
+    text-decoration: underline;
+}
+
+p.footer{
+    color:#585858;
+    font-size:80%;
+}
+
+.figure-img{
+    display:inline-block;
+    margin-bottom:.5rem;
+    line-height:1;
+    float: right;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 3rem auto 2rem auto;
+}
+
+.carolina-name {
+    font-size: 25px;
+    font-weight: bold;
+    align-self: center;
+}
+
+.nav-links {
+    display: flex;
+    align-self: center;
+    justify-content: space-evenly;
+    width: 400px;
+}
+
+.nav-links-lang {
+    display: flex;
+    align-self: center;
+    justify-content: space-evenly;
+    width: 20px;
+    font-size: 12px;
+}
+
+.langs {
+    align-self: center;
+}
